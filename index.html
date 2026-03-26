@@ -24,6 +24,7 @@
     }
 
     .card {
+  position: relative;
   background: rgba(15, 23, 42, 0.75);
   border-radius: 18px;
   padding: 24px;
@@ -99,12 +100,14 @@
   letter-spacing: 0.5px;
 }
 
-    .signature {
+  .signature {
+  position: absolute;
   font-size: 10px;
-  margin-bottom: 18px;
 
   color: #0f172a; /* same as background */
   user-select: text;
+
+  pointer-events: auto;
 }
     
   </style>

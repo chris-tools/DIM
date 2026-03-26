@@ -98,7 +98,21 @@
     <a class="button" href="#">Truck Audit Utility</a>
     <a class="button" href="#">Reel Tracking Utility</a>
     <a class="button" href="#">Commercial CPE (Coming Soon)</a>
-    </div>
-  </div>
-  </body>
+      </div>
+</div>
+
+<audio id="clickSound" src="https://cdn.jsdelivr.net/gh/terkelg/experiments/audio/click.mp3" preload="auto"></audio>
+
+<script>
+  const clickSound = document.getElementById("clickSound");
+
+  document.querySelectorAll(".button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+</script>
+
+</body>
 </html>

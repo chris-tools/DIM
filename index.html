@@ -101,9 +101,11 @@
       </div>
 </div>
 
-  <script>
+ <script>
   if (!location.search.includes('v=')) {
-    location.replace(location.pathname + '?v1');
+    setTimeout(() => {
+      location.replace(location.pathname + '?v=1');
+    }, 150);
   }
 </script>
   

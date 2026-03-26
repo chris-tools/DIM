@@ -23,6 +23,20 @@
       text-align: center;
     }
 
+    .card {
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 18px;
+  padding: 24px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
     h1 {
       margin-bottom: 10px;
       font-size: 28px;
@@ -60,12 +74,14 @@
 
 <body>
   <div class="container">
+  <div class="card">
     <h1>Distribution In Motion</h1>
     <div class="tagline">Tools for tracking, auditing, and inventory control</div>
 
     <a class="button" href="#">Truck Audit Utility</a>
     <a class="button" href="#">Reel Tracking Utility</a>
     <a class="button" href="#">Commercial CPE (Coming Soon)</a>
+    </div>
   </div>
-</body>
+  </body>
 </html>

@@ -86,6 +86,12 @@
     0 2px 6px rgba(0,0,0,0.6),
     inset 0 3px 6px rgba(0,0,0,0.5);
 }
+
+    .button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+    
   </style>
 </head>
 
@@ -94,11 +100,10 @@
   <div class="card">
     <h1>Distribution In Motion</h1>
     <div class="tagline">Tools for tracking, auditing, and inventory control</div>
-
-    <a class="button" href="#">Truck Audit Utility</a>
-    <a class="button" href="#">Reel Tracking Utility</a>
-    <a class="button" href="#">Commercial CPE (Coming Soon)</a>
-      </div>
+    <a class="button" href="https://chris-tools.github.io/Truck-Audit-Utility/">Truck Audit Utility</a>
+    <a class="button" href="https://chris-tools.github.io/Reel-Tracker-Utility/">Reel Tracking Utility</a>
+    <a class="button disabled" href="#" onclick="return false;">Commercial CPE (Coming Soon)</a>
+  </div>
 </div>
 
  <script>

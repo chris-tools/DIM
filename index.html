@@ -101,18 +101,11 @@
       </div>
 </div>
 
-<audio id="clickSound" src="https://cdn.jsdelivr.net/gh/terkelg/experiments/audio/click.mp3" preload="auto"></audio>
-
-<script>
-  const clickSound = document.getElementById("clickSound");
-
-  document.querySelectorAll(".button").forEach(btn => {
-    btn.addEventListener("click", () => {
-      clickSound.currentTime = 0;
-      clickSound.play();
-    });
-  });
+  <script>
+  if (!location.search.includes('v=')) {
+    location.replace(location.pathname + '?v1');
+  }
 </script>
-
+  
 </body>
 </html>
